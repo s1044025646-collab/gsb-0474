@@ -1,0 +1,21 @@
+{
+  "name": "isa-layered-atmosphere",
+  "version": "1.0.0",
+  "private": true,
+  "description": "分层标准大气压力高度换算与层界连续核验后端（教学用，0-32000 m 位势高度）",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js serve",
+    "cli": "node dist/cli.js",
+    "dev": "tsx src/cli.ts",
+    "test": "tsc -p tsconfig.test.json && node --test \"dist-test/test/*.test.js\"",
+    "demo": "node dist/cli.js demo"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "*",
+    "tsx": "*",
+    "typescript": "*"
+  }
+}
