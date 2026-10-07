@@ -1,0 +1,21 @@
+{
+  "name": "layered-standard-atmosphere",
+  "version": "1.0.0",
+  "description": "Layered standard atmosphere (0-32 km geopotential) pressure-altitude conversion backend with API and CLI",
+  "main": "dist/src/cli.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"dist/test/*.test.js\"",
+    "start": "npm run build && node dist/src/cli.js serve",
+    "demo": "npm run build && node dist/src/cli.js demo",
+    "cli": "npm run build && node dist/src/cli.js"
+  },
+  "keywords": ["atmosphere", "isa", "pressure-altitude"],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "typescript": "^7.0.2"
+  }
+}
